@@ -50,4 +50,14 @@ console.log(!true);
 console.log(false||'isha');  //true
 console.log(false||7||10||false);  //true //short circuiting
 
+//Bitwise Operators(&,|,~,<<,>>)
+
+console.log(1&0);  //0
+console.log(~(0));  //-1
+console.log(2^2);  //0
+console.log(2^0);  //2
+ console.log(5<<1);  //if left shift always divisible by 2  //10
+console.log(10>>1);  //5
+
+
 
