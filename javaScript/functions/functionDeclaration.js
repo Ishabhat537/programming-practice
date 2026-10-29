@@ -72,5 +72,34 @@ console.log(arr[0]); // 30
 
 //function decalarations are hoisted
 
+//constructors
+// const multiply=new Function("p","q","return p*q");
+// console.log(multiply(2,3));
+
+
+
+//function declaration
+function multiply(x,y){
+    return x*y;
+
+}
+console.log(multiply(3,4));
+
+//function expression
+const multiply=function(x,y){
+    return x*y;
+}
+let ans1=multiply(3,4);
+console.log(ans1);
+
+//arrow fn
+const multiply=(x,y)=>x*y;
+
+//method
+const obj={
+    multiply(x,y){
+        return x*y;
+    }
+}
 
 
