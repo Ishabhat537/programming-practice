@@ -60,4 +60,31 @@ console.log(2^0);  //2
 console.log(10>>1);  //5
 
 
+const obj={};
+obj.x=3;
+console.log(obj);
+console.log(obj.x);
+
+const val=0;
+val.x=3;
+console.log(val);
+console.log(val.x);
+
+//Destructuring
+
+//without destructuring
+// const arr=[1,2,3];
+// const l=arr[0];
+// const m=arr[1];
+//  const n=arr[2];
+// console.log(l,m,n);
+
+//with destructing
+
+const arr=[1,2,3];
+const [l,m,n]=arr;
+console.log(l,m,n);  //1,2,3
+
+
+
 
