@@ -75,3 +75,12 @@ console.log(a2); // [10, 20, 30]
 
 const i = a1.find((item) => typeof item === "number");
 console.log(i); // 10
+
+//every
+function isNumber(value) {
+  return typeof value === "number";
+}
+const a = [1, 2, 3];
+console.log(a1.every(isNumber)); // true
+const b = [1, "2", 3];
+console.log(a2.every(isNumber)); // false
