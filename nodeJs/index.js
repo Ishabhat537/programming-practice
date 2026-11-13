@@ -5,7 +5,7 @@ const myServer=http.createServer((req,res)=>{
     // console.log(req.headers);
     // console.log(req);
     if(req.url==='/favicon.ico') return res.end();
-    const log=`${Date.now()}:${req.url}: new req received\n`;
+    const log=`${Date.now()}: ${req.method} ${req.url}: new req received\n`;
     const myUrl=url.parse(req.url,true);  //imp
     console.log(myUrl);
   
@@ -20,6 +20,14 @@ const myServer=http.createServer((req,res)=>{
             case '/search':
                 const search=myUrl.query.search_query;
                 res.end("here are your results:"+search);
+                break;
+                case'/signup':
+                if(req.method==='GET') {
+                    res.end("This is a get signup ");
+                }
+                else if(req.method==='POST') {
+                    res.end("post signup");
+                }
                 break;
             default:res.end("404 not found");
          }

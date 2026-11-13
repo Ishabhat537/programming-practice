@@ -13,3 +13,6 @@
 1794554821127:/search?about?myName=isha+bhat: new req received
 1794554825668:/search?about?myName=isha+bhat: new req received
 1794554834219:/about?myName=isha+bhat: new req received
+
+1794555833306: GET /about: new req received
+1794555963431: GET /signup: new req received
